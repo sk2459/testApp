@@ -65,7 +65,7 @@ class TodoController extends Controller
         // dd(redirect()->to('todo'));
         // dd(redirect());
         // dd($this->todo->fill($input));
-        return redirect()->to('todo');  //redirectの帰り血は、Redirectorインスタンス     toの返り値は、RedirectResponseインスタンス　
+        return redirect()->route('todo.index');  //redirectの帰り血は、Redirectorインスタンス     toの返り値は、RedirectResponseインスタンス　
     }
 
     /**
